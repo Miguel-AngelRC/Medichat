@@ -7,6 +7,8 @@ _App móvil Android para la petición de medicamentos entre dos áreas de un hos
 * Java
 * XML
 
+![Captura](https://raw.githubusercontent.com/Miguel-AngelRC/Medichat/master/CAPTURA2.jpg)
+
 ## Autor ✒️
 
 * **Miguel Ángel** - *Trabajo Inicial* - [Miguel-AngelRC](https://github.com/Miguel-AngelRC)
