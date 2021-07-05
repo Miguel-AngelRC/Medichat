@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClienteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCliente"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/design_default_color_primary"
+                android:text="Esta es tu IP"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txV_textoIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewIP"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="5dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/TxV_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txV_textoIP"
+                android:layout_marginTop="10dp"
+                android:background="@color/design_default_color_primary"
+                android:text="Escribe la IP del otro Celular"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/txtIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TxV_titulo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:hint="Ej. 192.168.137.10"
+                android:inputType="phone"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/areaMensajesCliente"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/txtIP"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="10dp"
+                android:background="#E1DEDD"
+                android:editable="false"
+                android:scrollbars="vertical"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/txtMensaje"
+                android:layout_width="175dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/areaMensajesCliente"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="7dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btnEnviarC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMensaje"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="3dp"
+                android:text="Enviar" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

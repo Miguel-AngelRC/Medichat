@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewArea"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="#39a6a3"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/textViewIP"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textViewArea"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="#39a6a3"
+                android:text="Esta es tu IP: "
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txV_textoIP"
+                android:layout_width="255dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textViewArea"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/textViewIP"
+                android:background="#39a6a3"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/btnRecargarIp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/bordes_redondos_2"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="0dp"
+                android:src="@mipmap/recargar"
+                android:text="Ocultar Datos"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/txV_textoIP"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:text="Área de CENDIS"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/btnOcultarDatos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txV_textoIP"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bordes_redondos"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="0dp"
+                android:src="@mipmap/ocultar"
+                android:text="Ocultar Datos"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnMostrarDatos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txV_textoIP"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bordes_redondos"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="0dp"
+                android:src="@mipmap/mostrar"
+                android:text="Ocultar Datos"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TxV_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCliente"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bordes_redondos_2"
+                android:text="Escribe la IP del otro Celular"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="0dp"
+
+                />
+
+            <EditText
+                android:id="@+id/txtIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TxV_titulo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Ej. 192.168.137.10"
+                android:inputType="phone"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/btnLimpiar"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_above="@+id/areaMensajes"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="-50dp"
+                android:background="@drawable/bordes_redondos_4"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/escoba"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/areaMensajes"
+                android:layout_width="407dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtIP"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/bordes_redondos_3"
+                android:editable="false"
+                android:hint="Espererando Mensajes"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="10dp"
+                android:scrollbars="vertical"
+                android:text="" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/areaMensajes"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/bordes_redondos_3"
+                android:textColor="#231e23" />
+
+            <ImageButton
+                android:id="@+id/btnOcultarLista"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/areaMensajes"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bordes_redondos"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="0dp"
+                android:src="@mipmap/f_farriba"
+                android:text="Ocultar Datos"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnMostrarLista"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/areaMensajes"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bordes_redondos"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="0dp"
+                android:src="@mipmap/f_abajo"
+                android:text="Ocultar Datos"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listMedicamentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bordes_redondos_3"></ListView>
+
+
+
+
+            <EditText
+                android:id="@+id/txtMensaje"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listMedicamentos"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/btnEnviar"
+                android:text="" />
+
+
+            <ImageButton
+                android:id="@+id/btnEnviar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/listMedicamentos"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="10dp"
+                android:text=""
+                android:src="@mipmap/enviar__2"
+                android:scaleType="fitCenter"
+                android:background="@drawable/bordes_redondos"
+                />
+
+            <TextView
+                android:id="@+id/TxV_tituloAgregarGrupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMensaje"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bordes_redondos_2"
+                android:text="Añade un Nuevo Grupo"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/eTxV_Grupo"
+                android:layout_width="175dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/TxV_tituloAgregarGrupo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:hint="Grupo"/>
+
+
+            <Button
+                android:id="@+id/btnGuardarGrupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TxV_tituloAgregarGrupo"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/eTxV_Grupo"
+                android:text="Guardar"
+                />
+
+            <TextView
+                android:id="@+id/TxV_tituloAgregarMedicamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnGuardarGrupo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/bordes_redondos_2"
+                android:text="Añade un Nuevo Medicamento"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/eTxV_Medicamento"
+                android:layout_width="175dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/TxV_tituloAgregarMedicamento"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:hint="Medicamento"/>
+
+            <Button
+                android:id="@+id/btnGuardarMedicamento"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/TxV_tituloAgregarMedicamento"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/eTxV_Grupo"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btnOcultarRegistros"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/btnGuardarMedicamento"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="0dp"
+                android:text="Ocultar añadir"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
