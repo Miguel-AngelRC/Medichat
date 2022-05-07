@@ -1,4 +1,4 @@
-# Protein-Mix
+# Medichat
 
 _App móvil Android para la petición de medicamentos entre dos áreas de un hospital por medio de mensajes de texto a través de una red local._
 
